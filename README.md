@@ -15,4 +15,4 @@ catch (Exception e) {
   StackOverflowSearchLib.search(e);
 }
 ```
-NOTE: Doesn't work on Linux (and maybe Mac? Can someone with a Mac please test for me) because of poor integration for the Java Desktop API
+NOTE: Doesn't work on Linux because of poor integration with the Java Desktop API
