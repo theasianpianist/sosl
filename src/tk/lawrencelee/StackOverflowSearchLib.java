@@ -11,14 +11,14 @@ import java.net.URISyntaxException;
 
 public class StackOverflowSearchLib {
     public static void search(Exception e) {
-        String exceptionName = e.getClass().toString();
+        String exceptionName = e.getClass().toString().split(" ")[1];
         String message = e.getMessage().replace(" ", "+");
         String query = "";
         if (exceptionName.equals("java.lang.IndexOutOfBoundsException")) {
             query += exceptionName;
         }
         else {
-            query += exceptionName + message;
+            query += exceptionName + " " + message;
         }
         String stackOverflow = "http://stackoverflow.com/search?q=";
         String google = "https://www.google.com/#q=";
@@ -31,6 +31,15 @@ public class StackOverflowSearchLib {
         }
         catch (IOException ex) {
             System.exit(1);
+        }
+    }
+
+    public static void main (String[] args) {
+        try {
+            throw new IllegalArgumentException("testing");
+        }
+        catch (Exception e) {
+            search(e);
         }
     }
 }
