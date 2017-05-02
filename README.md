@@ -1,6 +1,8 @@
 StackOverflow Search Library
 
-A simple Java library that searches Google and StackOverflow for exceptions that are thrown during runtime
+A simple Java library that searches Google and StackOverflow for exceptions that are thrown during runtime.
+
+A pre-built JAR is included in the /target directory in case you don't want to build your own.
 
 Usage:
 
