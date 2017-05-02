@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class StackOverflowSearchLib {
+public class sosl {
     public static void search(Exception e) {
         e.printStackTrace();
         String exceptionName = e.getClass().toString().split(" ")[1];
@@ -27,6 +27,9 @@ public class StackOverflowSearchLib {
             Desktop.getDesktop().browse(new URI(stackOverflow + query));
             Desktop.getDesktop().browse(new URI(google + query));
         }
+        catch (UnsupportedOperationException ex) {
+            System.out.println("Unfortunately your system does not support this library");
+        }
         catch (URISyntaxException ex) {
             e.printStackTrace();
         }
@@ -35,12 +38,12 @@ public class StackOverflowSearchLib {
         }
     }
 
-//    public static void main (String[] args) {
-//        try {
-//            throw new IllegalArgumentException("test message");
-//        }
-//        catch (Exception e) {
-//            search(e);
-//        }
-//    }
+    public static void main (String[] args) {
+        try {
+            throw new IllegalArgumentException("test message");
+        }
+        catch (Exception e) {
+            search(e);
+        }
+    }
 }

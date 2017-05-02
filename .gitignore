@@ -1,2 +1,6 @@
 *.iml
 .idea/
+target/classes/
+target/maven-archiver/
+target/maven-status/
+.fuse_hidden0000015900000002

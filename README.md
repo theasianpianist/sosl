@@ -5,7 +5,7 @@ A simple Java library that searches Google and StackOverflow for exceptions that
 Usage:
 
 ```java
-import tk.lawrencelee.StackOverflowSearchLib;
+import tk.lawrencelee.sosl;
 ```
 ```java
 try {
