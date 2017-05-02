@@ -2,7 +2,7 @@ StackOverflow Search Library
 
 A simple Java library that searches Google and StackOverflow for exceptions that are thrown during runtime
 
-Usage: Within a try/catch block:
+Usage:
 
 ```java
 import tk.lawrencelee.StackOverflowSearchLib;
