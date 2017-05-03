@@ -14,7 +14,7 @@ try {
   //some code that throws an exception
 }
 catch (Exception e) {
-  sosl.search(e);
+  StackOverflowSearchLib.search(e);
 }
 ```
 NOTE: Doesn't work on Linux because of poor integration with the Java Desktop API

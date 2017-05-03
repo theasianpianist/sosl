@@ -38,12 +38,12 @@ public class sosl {
         }
     }
 
-    public static void main (String[] args) {
-        try {
-            throw new IllegalArgumentException("test message");
-        }
-        catch (Exception e) {
-            search(e);
-        }
-    }
+//    public static void main (String[] args) {
+//        try {
+//            throw new IllegalArgumentException("test message");
+//        }
+//        catch (Exception e) {
+//            sosl.search(e);
+//        }
+//    }
 }
