@@ -9,8 +9,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class sosl {
-    public static void search(Exception e) {
+public class sosl implements Thread.UncaughtExceptionHandler{
+    public void uncaughtException(Thread t, Throwable e) {
         e.printStackTrace();
         String exceptionName = e.getClass().toString().split(" ")[1];
         String message = e.getMessage().replace(" ", "+");
@@ -37,13 +37,4 @@ public class sosl {
             e.printStackTrace();
         }
     }
-
-//    public static void main (String[] args) {
-//        try {
-//            throw new IllegalArgumentException("test message");
-//        }
-//        catch (Exception e) {
-//            sosl.search(e);
-//        }
-//    }
 }
