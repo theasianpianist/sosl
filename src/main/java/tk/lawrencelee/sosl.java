@@ -24,6 +24,8 @@ public class sosl implements Thread.UncaughtExceptionHandler{
         catch (UnsupportedEncodingException ex) {
             ex.printStackTrace();
         }
+        message = message.replace("%2B", "+");
+        message = message.substring(0, message.indexOf("%"));
         String query = "";
         if (specialExceptions.contains(exceptionName)) {
             query += exceptionName;
