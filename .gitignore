@@ -4,3 +4,5 @@ target/classes/
 target/maven-archiver/
 target/maven-status/
 .fuse_hidden0000015900000002
+.fuse_hidden0000006800000001
+.*
